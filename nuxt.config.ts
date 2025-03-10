@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   ],
   clerk: {
     skipServerMiddleware: true,
+    signInUrl: '/sign-in',
+    signUpUrl: '/sign-up',
+    afterSignOutUrl: '/sign-in',
   },
   components: [
     {

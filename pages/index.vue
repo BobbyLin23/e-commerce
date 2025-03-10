@@ -4,8 +4,12 @@ const { onOpen } = useStoreModal()
 
 <template>
   <div class="p-2">
-    <UButton @click="onOpen">
+    <UButton variant="outline" @click="onOpen">
       Click
     </UButton>
+    <UButton>
+      123
+    </UButton>
+    <UserButton />
   </div>
 </template>

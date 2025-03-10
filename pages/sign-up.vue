@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { dark } from '@clerk/themes'
 
 definePageMeta({
@@ -18,7 +18,7 @@ const isDark = computed({
 </script>
 
 <template>
-  <SignIn
+  <SignUp
     :appearance="{
       baseTheme: isDark ? dark : undefined,
     }"
