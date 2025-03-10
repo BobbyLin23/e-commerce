@@ -9,8 +9,19 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/ui', '@clerk/nuxt'],
+  modules: [
+    '@nuxt/ui',
+    '@clerk/nuxt',
+    '@pinia/nuxt',
+  ],
   clerk: {
     skipServerMiddleware: true,
   },
+  components: [
+    {
+      path: '~/components/modals',
+      pathPrefix: false,
+    },
+    '~/components',
+  ],
 })
