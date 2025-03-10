@@ -9,5 +9,8 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@clerk/nuxt'],
+  clerk: {
+    skipServerMiddleware: true,
+  },
 })

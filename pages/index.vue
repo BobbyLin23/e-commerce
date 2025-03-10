@@ -1,5 +1,3 @@
 <template>
-  <UButton>
-    Click
-  </UButton>
+  <UserButton />
 </template>
