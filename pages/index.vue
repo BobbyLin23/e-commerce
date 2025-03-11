@@ -1,15 +1,17 @@
 <script setup lang="ts">
 const { onOpen } = useStoreModal()
+
+const { data } = useGetStores()
+
+onMounted(() => {
+  if (data.value && data.value?.length < 1) {
+    onOpen()
+    return
+  }
+  navigateTo(`/${data.value?.[0].id}`)
+})
 </script>
 
 <template>
-  <div class="p-2">
-    <UButton variant="outline" @click="onOpen">
-      Click
-    </UButton>
-    <UButton>
-      123
-    </UButton>
-    <UserButton />
-  </div>
+  <div />
 </template>

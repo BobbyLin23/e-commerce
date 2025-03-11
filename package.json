@@ -14,16 +14,21 @@
     "@clerk/themes": "^2.2.20",
     "@nuxt/ui": "3.0.0-beta.3",
     "@pinia/nuxt": "0.10.1",
+    "@prisma/client": "6.4.1",
+    "@prisma/nuxt": "^0.3.0",
     "@tailwindcss/vite": "^4.0.12",
+    "@tanstack/vue-query": "^5.67.2",
     "nuxt": "^3.15.4",
     "pinia": "^3.0.1",
     "tailwindcss": "^4.0.12",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.8.1",
     "@iconify-json/lucide": "^1.2.29",
-    "eslint": "^9.22.0"
+    "eslint": "^9.22.0",
+    "prisma": "6.4.1"
   }
 }
